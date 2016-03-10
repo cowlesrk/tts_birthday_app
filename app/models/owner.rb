@@ -1,3 +1,4 @@
+
 class Owner
 	def name
 		name = "Rachel"
