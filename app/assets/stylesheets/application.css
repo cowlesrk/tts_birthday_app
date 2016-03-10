@@ -17,14 +17,75 @@ html, body {
 	background: pink;
 }
 
-.main {
-	background: white;
-	padding: 5%;
-	border-radius: 50%;
-	width: 200px;
-	margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
+.heart{
+    position: relative;
+    width: 325px;
+    height: 325px;
+    background-color: white;
+}
+
+.heart:before{
+    position: absolute;
+    bottom: 0px;
+    left: -200px;
+    width: 200px;
+    height: 200px;
+    content: '';
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: white);
+}
+
+.heart:after{
+    position: absolute;
+    top: -200px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    content: '';
+     
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+ 
+    background-color: white;
+}
+
+.heart:before,
+.heart:after{
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    content: '';
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: white;
+}
+.heart:before{
+    bottom: 0px;
+    left: -200px;
+}
+.heart:after{
+    top: -200px;
+    right: 0px;
+}
+
+.heart{
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.text {
+	position: relative;
+	top: -300px;
 }
 
 h1 {
