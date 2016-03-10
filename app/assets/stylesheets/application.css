@@ -26,3 +26,42 @@ html, body {
     margin-right: auto;
     margin-top: 10%;
 }
+
+h1 {
+
+	display: inline;
+	position: relative;
+	font: 5em Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+	color: rgba(0,0,255,0.5); 
+
+}
+
+
+h1:after {
+
+	content: "hello";
+	position: absolute; left: .04em; top: .02em;
+	color: rgba(255,0,0,0.5);   
+
+}
+
+@-webkit-keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+
+.pusheen { 
+    width: 100%; 
+    height: 13em;
+    background-image: url("http://i1124.photobucket.com/albums/l579/fieKrieY/Unicorn.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: auto;
+
+    animation: animatedBackground 20s linear infinite;
+    -ms-animation: animatedBackground 20s linear infinite;
+    -moz-animation: animatedBackground 20s linear infinite;
+    -webkit-animation: animatedBackground 20s linear infinite;
+}
