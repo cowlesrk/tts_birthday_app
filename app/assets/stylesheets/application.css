@@ -47,8 +47,8 @@ h1:after {
 }
 
 @-webkit-keyframes animatedBackground {
-    from { background-position: 0 0; }
-    to { background-position: 100% 0; }
+    from { margin-left: 100%; }
+    to { margin-left: 0%; }
 }
 
 .pusheen { 
@@ -59,6 +59,7 @@ h1:after {
     background-repeat: no-repeat;
     position: relative;
     z-index: auto;
+    animation-direction: reverse;
 
     animation: animatedBackground 20s linear infinite;
     -ms-animation: animatedBackground 20s linear infinite;
