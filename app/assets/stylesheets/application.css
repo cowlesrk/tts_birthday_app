@@ -17,6 +17,11 @@ html, body {
 	background: pink;
 }
 
+img {
+	height: 100px;
+
+}
+
 .heart{
     position: relative;
     width: 325px;
@@ -85,7 +90,7 @@ html, body {
 
 .text {
 	position: relative;
-	top: -300px;
+	top: -375px;
 }
 
 h1 {
